@@ -19,7 +19,7 @@ class shortenUrlApp (webapp.webApp):
 		return None
 
 	def readDict(self, file):
-		with open("fich.csv", "a") as csvfile:
+		with open("fich.csv", "r") as csvfile:
 			if os.stat('fich.csv').st_size == 0:
 				print("Empty file")
 			else:
